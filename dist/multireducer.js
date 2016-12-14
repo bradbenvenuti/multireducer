@@ -54,7 +54,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.wrapDispatch=exports.bindActionCreators=undefined;var _plainMultireducer=__webpack_require__(11);var _plainMultireducer2=_interopRequireDefault(_plainMultireducer);
+	Object.defineProperty(exports,"__esModule",{value:true});exports.wrapDispatch=exports.bindActionCreators=undefined;var _plainMultireducer=__webpack_require__(11);var _plainMultireducer2=_interopRequireDefault(_plainMultireducer);
 	var _bindActionCreators=__webpack_require__(8);var _bindActionCreators2=_interopRequireDefault(_bindActionCreators);
 	var _wrapDispatch=__webpack_require__(2);var _wrapDispatch2=_interopRequireDefault(_wrapDispatch);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.
 
@@ -66,7 +66,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1 */
 /***/ function(module, exports) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var key='__multireducerKey';exports.default=
+	Object.defineProperty(exports,"__esModule",{value:true});var key='__multireducerKey';exports.default=
 
 	key;
 
@@ -74,7 +74,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _typeof=typeof Symbol==="function"&&typeof(typeof Symbol==='function'?Symbol.iterator:'@@iterator')==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==(typeof Symbol==='function'?Symbol.prototype:'@@prototype')?"symbol":typeof obj;};exports.default=
+	Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 	wrapDispatch;var _wrapAction=__webpack_require__(12);var _wrapAction2=_interopRequireDefault(_wrapAction);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function wrapDispatch(dispatch,reducerKey){
 	var wrappedDispatch=function wrappedDispatch(action){
@@ -82,7 +82,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(typeof action==='function'){
 	wrappedAction=function wrappedAction(globalDispatch,getState,extraArgument){return(
 	action(wrappedDispatch,getState,globalDispatch,reducerKey,extraArgument));};
-	}else if((typeof action==='undefined'?'undefined':_typeof(action))==='object'){
+	}else if(typeof action==='object'){
 	wrappedAction=(0,_wrapAction2.default)(action,reducerKey);
 	}
 	return dispatch(wrappedAction);
@@ -514,7 +514,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.default=
+	Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
 
@@ -527,7 +527,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 9 */
 /***/ function(module, exports) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var initAction={type:'@@multireducer/INIT'};exports.default=
+	Object.defineProperty(exports,"__esModule",{value:true});var initAction={type:'@@multireducer/INIT'};exports.default=
 
 	initAction;
 
@@ -535,7 +535,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 10 */
 /***/ function(module, exports) {
 
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+	Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
 
 
 
@@ -550,7 +550,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+	Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
 
 
 
@@ -596,7 +596,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+	Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
 
 	wrapAction;var _key=__webpack_require__(1);var _key2=_interopRequireDefault(_key);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}function wrapAction(action,reducerKey){
 	return _extends({},
