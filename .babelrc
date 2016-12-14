@@ -6,7 +6,7 @@
         "transform-class-properties"
       ]
     },
-    "es2015",
+    "react-native",
     "react-native-stage-0"
   ]
 }
